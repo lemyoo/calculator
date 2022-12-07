@@ -1,6 +1,8 @@
 import Entry from "./Entry"
 import { createTheme } from '@mui/material/styles'
-import { ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles"
+import { Provider } from 'react-redux'
+import store from "./store"
 
 const theme = createTheme({
   palette: {
@@ -18,11 +20,11 @@ const theme = createTheme({
 
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <ThemeProvider theme={theme} >
         <Entry />
       </ThemeProvider>
-    </div>
+    </Provider>
   );
 }
 
