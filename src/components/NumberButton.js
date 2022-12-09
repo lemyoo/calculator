@@ -20,7 +20,7 @@ const NumberButton = ({ number }) => {
         dispatch(displayNumberAction(values))
     }
     return (
-        <NumButton variant='outlined' onClick={onClickHandler} size="large">{number}</NumButton>
+        <NumButton variant='outlined' onClick={onClickHandler} >{number}</NumButton>
     )
 }
 
