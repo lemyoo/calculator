@@ -1,1 +1,2 @@
 export const DISPLAY_NUMBERS = "DISPLAY_NUMBERS";
+export const CURRENT_NUMBER = "CURRENT_NUMBER";
