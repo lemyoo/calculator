@@ -5,7 +5,7 @@ const DisplayView = () => {
     const { displayValues } = useSelector(state => state.app)
 
     return (
-        <TextField multiline variant='outlined' rows={8} defaultValue={displayValues.join("")} sx={{ width: '100%' }} disabled />
+        <TextField multiline variant='outlined' rows={4} value={displayValues.join("")} sx={{ width: '100%' }} disabled />
     )
 }
 

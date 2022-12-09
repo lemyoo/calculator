@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 const AnswerDisplay = () => {
     const { answer } = useSelector(state => state.app)
     return (
-        <div><TextField sx={{ width: '100%' }} defaultValue={0} value={answer} disabled /></div>
+        <div><TextField sx={{ width: '100%' }} value={answer} disabled /></div>
     )
 }
 

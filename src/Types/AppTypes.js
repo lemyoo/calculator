@@ -1,3 +1,4 @@
 export const DISPLAY_NUMBERS = "DISPLAY_NUMBERS";
 export const CURRENT_NUMBER = "CURRENT_NUMBER";
 export const ANSWER_DISPLAY = "ANSWER_DISPLAY";
+export const CHECK_POINT = "CHECK_POINT";

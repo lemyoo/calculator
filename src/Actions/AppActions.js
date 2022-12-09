@@ -1,4 +1,4 @@
-import { DISPLAY_NUMBERS, CURRENT_NUMBER, ANSWER_DISPLAY } from '../Types/AppTypes'
+import { DISPLAY_NUMBERS, CURRENT_NUMBER, ANSWER_DISPLAY, CHECK_POINT } from '../Types/AppTypes'
 
 export const currentNumberAction = (data) => {
     return {
@@ -19,6 +19,14 @@ export const displayNumberAction = (data) => {
 export const answerDisplayAction = (data) => {
     return {
         type: ANSWER_DISPLAY,
+        payload: {
+            data: data
+        }
+    }
+}
+export const pointPresentAction = (data) => {
+    return {
+        type: CHECK_POINT,
         payload: {
             data: data
         }
